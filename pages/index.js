@@ -40,7 +40,7 @@ const Home = ({data}) => {
   }
 
   const updateMacros = async () => {
-    const res = await fetch('http://localhost:3000/api/daily', {
+    const res = await fetch('https://mct-mongodb-test.vercel.app//api/daily', {
       method: 'post',
       body: JSON.stringify(results)
     })
